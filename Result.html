@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Live Virtual Class </title>
+        <link rel="stylesheet" href="./css/link1.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            <script>
+                function jfun1()
+                {
+                 var m=parseInt(Form1.t1.value)
+                 var e=parseInt(Form1.t2.value)
+                 var c=parseInt(Form1.t3.value)
+
+                var max;
+                    if(m>e && m>c)
+                    {
+                        max=m;
+                    }
+                    else if(e>m && e>c)
+                    {
+                        max=e;
+                    }
+                    else
+                    {
+                        max=c;
+                    }
+
+                 Form1.t4.value=m+e+c;
+                 Form1.t5.value=((m+e+c)/300)*100
+                 Form1.t6.value=max
+                }
+            </script>
+    </head>
+        <body style="background-color: antiquewhite;">
+                <header style="text-align: center;background-image: url(./Images/232323232434554657eewfer.jpg);height: 260px;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                       <h1> ENTERTAINMENT</h1>
+
+                </header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Registration.html">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact_Us.html">Contact us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Result.html">Result</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                <div style="margin: 15%;height:400px; width:1000px;background-color: grey;text-align:center;border-radius: 30px;">
+                   <br>
+                    <h2 style="text-align: center; background-color: black;-webkit-text-fill-color: aliceblue;">Student result</h2>
+                    <form name="Form1">
+                        <pre>
+                        <br>
+                        Name:<input type="text"><br>
+                        |Marks| <br>
+                        Maths:<input type="text" name="t1">  English:<input type="text" name="t2" > Computer:<input type="text" name="t3"><br>
+                        |Result|<br>
+                        Total marks: <input type="text" name="t4">  % Marks:<input type="text" name="t5">  MAX Marks:<input type="text" name="t6"><br>
+                                                              <input type="button" value="Result" onclick="jfun1()" >
+                        </pre>
+                    </form>
+                </div>
+                
+                <footer style="background-color:cyan;height:120px;text-align: center;">
+                    <br>
+                    <p>&copy;This Website is Developed By : Chethan HR(CHR)</p>                
+                </footer>
+        </body>
+</html>
